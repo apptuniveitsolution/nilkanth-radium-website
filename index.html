@@ -3,436 +3,246 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nilkanth Radium Sticker & Signage – Premium signage solutions including LED signage, acrylic letters, ACP boards, CNC cutting, and custom branding. Building brands that shine." />
-  <meta name="keywords" content="radium sticker, signage, LED signage, acrylic letters, ACP boards, CNC cutting, sign board, branding India" />
-  <meta property="og:title" content="Nilkanth Radium Sticker & Signage" />
-  <meta property="og:description" content="We create powerful signage that builds your brand." />
-  <meta property="og:type" content="website" />
-  <title>Nilkanth Radium Sticker & Signage | Premium Signage Solutions</title>
+  <meta name="description" content="Nilkanth Radium Sticker & Signage – Premium signage solutions including LED boards, acrylic letters, CNC cutting, vehicle wrapping, and more in India." />
+  <title>Nilkanth Radium | Premium Signage Solutions</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Custom Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-trail" id="cursorTrail"></div>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+  <!-- Background Animated Blur -->
+  <div class="bg-glow blob-1"></div>
+  <div class="bg-glow blob-2"></div>
+  <div class="bg-glow blob-3"></div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <span class="logo-icon">◈</span>
-        <span>NILKANTH</span>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner container">
+      <a href="#home" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="logo-text">
+          <span class="logo-main">NILKANTH</span>
+          <span class="logo-sub">Signage & Radium</span>
+        </div>
       </a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#stats">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="tel:+919999999999" class="nav-cta">Call Now</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+919999999999" class="btn btn-glass"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#services">Services</a>
-      <a href="#stats">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-      <a href="tel:+919999999999" class="mob-cta">Call Now</a>
-    </div>
-  </nav>
+  </header>
 
   <!-- HERO SECTION -->
-  <section class="hero" id="hero">
-    <canvas id="heroCanvas"></canvas>
-    <div class="hero-glow glow-1"></div>
-    <div class="hero-glow glow-2"></div>
-    <div class="hero-glow glow-3"></div>
-
-    <div class="hero-content">
-      <div class="hero-tag reveal-up">
-        <span class="dot"></span> Premium Signage Studio · Est. 2019
+  <section id="home" class="hero">
+    <div class="hero-content container">
+      <div class="hero-left reveal">
+        <div class="hero-badge"><i class="fa-solid fa-crown"></i> 18+ Years of Excellence</div>
+        <h1 class="hero-title">
+          Illuminating Your <br/>
+          <span class="text-gradient">Brand Identity</span>
+        </h1>
+        <p class="hero-sub">
+          We craft bold, premium signage solutions—from glowing LED letters to sleek vehicle wraps—making your business impossible to ignore.
+        </p>
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View Our Work</a>
+          <a href="https://wa.me/919999999999" target="_blank" class="btn btn-glass whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-text">Projects<br/>Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-text">Client<br/>Satisfaction</span>
+          </div>
+        </div>
       </div>
-      <h1 class="hero-title">
-        <div class="line-wrap"><span class="line reveal-line">We Create</span></div>
-        <div class="line-wrap"><span class="line reveal-line delay-1">Powerful</span></div>
-        <div class="line-wrap"><span class="line reveal-line delay-2 gradient-text">Signage</span></div>
-        <div class="line-wrap"><span class="line reveal-line delay-3">That Builds</span></div>
-        <div class="line-wrap"><span class="line reveal-line delay-4">Your Brand</span></div>
-      </h1>
-      <p class="hero-sub reveal-up delay-5">From radium stickers to monumental LED displays — we make your brand impossible to ignore.</p>
-      <div class="hero-btns reveal-up delay-6">
-        <a href="tel:+919999999999" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Call Now
-        </a>
-        <a href="https://wa.me/919999999999" target="_blank" class="btn btn-whatsapp">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp Now
-        </a>
+      
+      <div class="hero-right reveal" style="transition-delay: 0.2s">
+        <div class="hero-image-stack">
+          <div class="img-main"><img src="images/WhatsApp Image 2026-04-14 at 8.45.33 PM.jpeg" alt="Signage Project 1" /></div>
+          <div class="img-float float-1"><img src="images/WhatsApp Image 2026-04-14 at 8.45.42 PM (1).jpeg" alt="Signage Project 2" /></div>
+          <div class="img-float float-2"><img src="images/WhatsApp Image 2026-04-14 at 8.45.35 PM (1).jpeg" alt="Signage Project 3" /></div>
+        </div>
       </div>
-    </div>
-
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-
-    <div class="hero-badge">
-      <div class="badge-ring"></div>
-      <span>500+<br>Projects</span>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee-wrap">
+  <div class="marquee-container">
     <div class="marquee-track">
-      <span>LED Signage</span><span class="sep">✦</span>
-      <span>Radium Stickers</span><span class="sep">✦</span>
-      <span>Acrylic Letters</span><span class="sep">✦</span>
-      <span>ACP Boards</span><span class="sep">✦</span>
-      <span>CNC Cutting</span><span class="sep">✦</span>
-      <span>Sign Boards</span><span class="sep">✦</span>
-      <span>Custom Branding</span><span class="sep">✦</span>
-      <span>LED Screens</span><span class="sep">✦</span>
-      <span>LED Signage</span><span class="sep">✦</span>
-      <span>Radium Stickers</span><span class="sep">✦</span>
-      <span>Acrylic Letters</span><span class="sep">✦</span>
-      <span>ACP Boards</span><span class="sep">✦</span>
-      <span>CNC Cutting</span><span class="sep">✦</span>
-      <span>Sign Boards</span><span class="sep">✦</span>
-      <span>Custom Branding</span><span class="sep">✦</span>
-      <span>LED Screens</span><span class="sep">✦</span>
+      <span>Acrylic Letters</span> • <span>LED Sign Boards</span> • <span>Vehicle Wrapping</span> • <span>CNC Cutting</span> • <span>ACP Boards</span> • <span>PVD Signage</span> • 
+      <span>Acrylic Letters</span> • <span>LED Sign Boards</span> • <span>Vehicle Wrapping</span> • <span>CNC Cutting</span> • <span>ACP Boards</span> • <span>PVD Signage</span> • 
+      <span>Acrylic Letters</span> • <span>LED Sign Boards</span> • <span>Vehicle Wrapping</span> • <span>CNC Cutting</span> • <span>ACP Boards</span> • <span>PVD Signage</span> • 
     </div>
   </div>
 
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about section">
+    <div class="container about-wrapper">
+      <div class="about-images reveal">
+        <div class="about-img-main">
+          <img src="images/WhatsApp Image 2026-04-14 at 8.45.54 PM (1).jpeg" alt="Our Workshop" />
+        </div>
+        <div class="glass-card about-experience">
+          <span class="exp-num">18</span>
+          <span class="exp-text">Years Building<br/>Great Brands</span>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-tag">About Us</div>
+        <h2 class="section-title">Craftsmanship Meets <span class="text-gradient">Technology</span></h2>
+        <p>Nilkanth Radium Sticker & Signage combines state-of-the-art fabrication technology with artisan craftsmanship. For nearly two decades, we have been the trusted signage partner for businesses across India.</p>
+        <p>From precision CNC cutting to vibrant LED displays, we handle every aspect of your signage project in-house ensuring unparalleled quality and fast turnaround times.</p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-check-double"></i> Premium UV-Resistant Materials</li>
+          <li><i class="fa-solid fa-check-double"></i> In-House Design & Fabrication</li>
+          <li><i class="fa-solid fa-check-double"></i> Professional On-site Installation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- SERVICES SECTION -->
-  <section class="services" id="services">
+  <section id="services" class="services section relative">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label scroll-reveal">What We Do</span>
-        <h2 class="section-title scroll-reveal">Crafted Signage<br><em>for Bold Brands</em></h2>
+      <div class="section-header reveal">
+        <div class="section-tag">Our Expertise</div>
+        <h2 class="section-title">Comprehensive <span class="text-gradient">Signage Services</span></h2>
       </div>
+      
       <div class="services-grid">
-        <div class="service-card scroll-reveal" data-index="0">
-          <div class="card-glow"></div>
-          <div class="service-num">01</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M14 24h20M24 14v20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="6" fill="currentColor" opacity=".3"/></svg>
-          </div>
-          <h3>Radium Stickers</h3>
-          <p>High-visibility retro-reflective stickers that glow brilliantly in the dark. Perfect for vehicles, safety, and branding.</p>
-          <div class="card-arrow">→</div>
-        </div>
-        <div class="service-card scroll-reveal" data-index="1">
-          <div class="card-glow"></div>
-          <div class="service-num">02</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 22h16M16 26h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Sign Boards</h3>
-          <p>Custom-designed signboards that make your shopfront unforgettable. Durable, vivid, and built to last years.</p>
-          <div class="card-arrow">→</div>
-        </div>
-        <div class="service-card scroll-reveal" data-index="2">
-          <div class="card-glow"></div>
-          <div class="service-num">03</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M12 36L24 12l12 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 28h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
+        <div class="service-card glass-card reveal">
+          <div class="icon-wrap"><i class="fa-solid fa-font"></i></div>
           <h3>Acrylic & Steel Letters</h3>
-          <p>Precision-cut 3D dimensional letters in acrylic or stainless steel. Adds luxury depth to any facade or interior.</p>
-          <div class="card-arrow">→</div>
+          <p>Precision-cut 3D letters for a sophisticated corporate look. Perfect for reception walls and exterior branding.</p>
         </div>
-        <div class="service-card scroll-reveal" data-index="3">
-          <div class="card-glow"></div>
-          <div class="service-num">04</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
-          </div>
-          <h3>LED Signage</h3>
-          <p>Eye-catching illuminated signs that command attention day and night. Energy-efficient, vibrant, and long-lasting.</p>
-          <div class="card-arrow">→</div>
+        <div class="service-card glass-card reveal" style="transition-delay: 0.1s">
+          <div class="icon-wrap"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>LED Channel Letters</h3>
+          <p>Bright, energy-efficient illuminated signage ensuring your business stands out day and night.</p>
         </div>
-        <div class="service-card scroll-reveal" data-index="4">
-          <div class="card-glow"></div>
-          <div class="service-num">05</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M10 38L20 18l8 12 6-8 4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
+        <div class="service-card glass-card reveal" style="transition-delay: 0.2s">
+          <div class="icon-wrap"><i class="fa-solid fa-car-side"></i></div>
+          <h3>Vehicle Wrapping</h3>
+          <p>Transform your fleet into moving billboards with our high-quality, durable vinyl graphics and wraps.</p>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="icon-wrap"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Radium Stickers</h3>
+          <p>High-visibility retro-reflective decals perfect for safety signage, vehicles, and vivid outdoor applications.</p>
+        </div>
+        <div class="service-card glass-card reveal" style="transition-delay: 0.1s">
+          <div class="icon-wrap"><i class="fa-solid fa-crosshairs"></i></div>
           <h3>CNC & Laser Cutting</h3>
-          <p>Ultra-precise computer-guided cutting for intricate designs in wood, metal, acrylic, and foam. Zero compromise.</p>
-          <div class="card-arrow">→</div>
+          <p>Ultra-precise cutting of wood, metal, and acrylic for decorative panels, bespoke signs, and architectural elements.</p>
         </div>
-        <div class="service-card scroll-reveal" data-index="5">
-          <div class="card-glow"></div>
-          <div class="service-num">06</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 20h36M6 28h36" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
-          </div>
-          <h3>ACP Boards</h3>
-          <p>Aluminium Composite Panel boards — sleek, modern, and weather-resistant. The professional's choice for storefronts.</p>
-          <div class="card-arrow">→</div>
-        </div>
-        <div class="service-card scroll-reveal" data-index="6">
-          <div class="card-glow"></div>
-          <div class="service-num">07</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="28" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 40h16M24 36v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="14" y="16" width="20" height="12" rx="1" fill="currentColor" opacity=".2"/></svg>
-          </div>
-          <h3>LED Screens</h3>
-          <p>Dynamic digital display screens for advertising, events, and retail. Full-color, high-brightness, and fully programmable.</p>
-          <div class="card-arrow">→</div>
-        </div>
-        <div class="service-card scroll-reveal" data-index="7">
-          <div class="card-glow"></div>
-          <div class="service-num">08</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6l4.5 9 10 1.5-7.25 7 1.75 10L24 29l-9 4.5 1.75-10L9.5 16.5l10-1.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Custom Branding</h3>
-          <p>End-to-end branding solutions from concept to installation. We bring your brand identity to life at every touchpoint.</p>
-          <div class="card-arrow">→</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS SECTION -->
-  <section class="stats" id="stats">
-    <div class="stats-bg"></div>
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item scroll-reveal">
-          <div class="stat-num" data-target="500">0</div>
-          <div class="stat-plus">+</div>
-          <div class="stat-label">Projects Completed</div>
-          <div class="stat-bar"><div class="stat-bar-fill" data-width="90"></div></div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item scroll-reveal">
-          <div class="stat-num" data-target="300">0</div>
-          <div class="stat-plus">+</div>
-          <div class="stat-label">Happy Clients</div>
-          <div class="stat-bar"><div class="stat-bar-fill" data-width="75"></div></div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item scroll-reveal">
-          <div class="stat-num" data-target="5">0</div>
-          <div class="stat-plus">+</div>
-          <div class="stat-label">Years Experience</div>
-          <div class="stat-bar"><div class="stat-bar-fill" data-width="60"></div></div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item scroll-reveal">
-          <div class="stat-num" data-target="100">0</div>
-          <div class="stat-plus">%</div>
-          <div class="stat-label">Satisfaction Rate</div>
-          <div class="stat-bar"><div class="stat-bar-fill" data-width="100"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="why-us" id="why">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label scroll-reveal">Why Choose Us</span>
-        <h2 class="section-title scroll-reveal">Premium Quality,<br><em>Every Single Time</em></h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card scroll-reveal">
-          <div class="why-icon">⚡</div>
-          <h4>Fast Turnaround</h4>
-          <p>We respect your deadlines. Rush orders handled with zero compromise on quality.</p>
-        </div>
-        <div class="why-card scroll-reveal">
-          <div class="why-icon">🎯</div>
-          <h4>Precision Crafting</h4>
-          <p>Every millimeter matters. CNC precision meets artisan craftsmanship in every piece.</p>
-        </div>
-        <div class="why-card scroll-reveal">
-          <div class="why-icon">🌟</div>
-          <h4>Premium Materials</h4>
-          <p>We source only the best — UV-resistant inks, industrial-grade metals, top-tier LEDs.</p>
-        </div>
-        <div class="why-card scroll-reveal">
-          <div class="why-icon">🔥</div>
-          <h4>Bold Design Eye</h4>
-          <p>Our in-house designers don't just print — they craft visual identities that convert.</p>
-        </div>
-        <div class="why-card scroll-reveal">
-          <div class="why-icon">🛡️</div>
-          <h4>Warranty & Support</h4>
-          <p>All installations come with warranty and ongoing maintenance support. We stand by our work.</p>
-        </div>
-        <div class="why-card scroll-reveal">
-          <div class="why-icon">💰</div>
-          <h4>Competitive Pricing</h4>
-          <p>Premium quality at prices that make sense. Transparent quotes, no hidden surprises.</p>
+        <div class="service-card glass-card reveal" style="transition-delay: 0.2s">
+          <div class="icon-wrap"><i class="fa-solid fa-display"></i></div>
+          <h3>LED Video Screens</h3>
+          <p>Dynamic indoor and outdoor digital display walls to advertise, inform, and captivate your audience.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- GALLERY SECTION -->
-  <section class="gallery" id="gallery">
+  <section id="gallery" class="gallery section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label scroll-reveal">Our Work</span>
-        <h2 class="section-title scroll-reveal">Signage That<br><em>Stops Traffic</em></h2>
+      <div class="section-header reveal">
+        <div class="section-tag">Portfolio</div>
+        <h2 class="section-title">Our Recent <span class="text-gradient">Masterpieces</span></h2>
       </div>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item tall scroll-reveal">
-        <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=600&q=80" alt="LED Signage" loading="lazy" />
-        <div class="gallery-overlay"><span>LED Signage</span></div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal"><img src="images/WhatsApp Image 2026-04-14 at 3.20.21 PM (1).jpeg" alt="Gallery 1"/></div>
+        <div class="gallery-item reveal tall"><img src="images/WhatsApp Image 2026-04-14 at 3.20.21 PM.jpeg" alt="Gallery 2"/></div>
+        <div class="gallery-item reveal"><img src="images/WhatsApp Image 2026-04-14 at 8.01.48 PM.jpeg" alt="Gallery 3"/></div>
+        <div class="gallery-item reveal wide"><img src="images/WhatsApp Image 2026-04-14 at 8.45.10 PM.jpeg" alt="Gallery 4"/></div>
+        <div class="gallery-item reveal"><img src="images/WhatsApp Image 2026-04-14 at 8.45.11 PM.jpeg" alt="Gallery 5"/></div>
+        <div class="gallery-item reveal tall"><img src="images/WhatsApp Image 2026-04-14 at 8.45.12 PM.jpeg" alt="Gallery 6"/></div>
+        <div class="gallery-item reveal"><img src="images/WhatsApp Image 2026-04-14 at 8.45.17 PM (1).jpeg" alt="Gallery 7"/></div>
+        <div class="gallery-item reveal"><img src="images/WhatsApp Image 2026-04-14 at 8.45.22 PM.jpeg" alt="Gallery 8"/></div>
       </div>
-      <div class="gallery-item scroll-reveal">
-        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80" alt="Acrylic Letters" loading="lazy" />
-        <div class="gallery-overlay"><span>Acrylic Letters</span></div>
-      </div>
-      <div class="gallery-item scroll-reveal">
-        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Sign Board" loading="lazy" />
-        <div class="gallery-overlay"><span>Sign Boards</span></div>
-      </div>
-      <div class="gallery-item wide scroll-reveal">
-        <img src="https://images.unsplash.com/photo-1524813686514-a57563d77965?w=900&q=80" alt="Brand Installation" loading="lazy" />
-        <div class="gallery-overlay"><span>Brand Installation</span></div>
-      </div>
-      <div class="gallery-item scroll-reveal">
-        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80" alt="CNC Cutting" loading="lazy" />
-        <div class="gallery-overlay"><span>CNC Cutting</span></div>
-      </div>
-      <div class="gallery-item tall scroll-reveal">
-        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80" alt="Custom Branding" loading="lazy" />
-        <div class="gallery-overlay"><span>Custom Branding</span></div>
-      </div>
-      <div class="gallery-item scroll-reveal">
-        <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=600&q=80" alt="ACP Boards" loading="lazy" />
-        <div class="gallery-overlay"><span>ACP Boards</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA SECTION -->
-  <section class="cta-section" id="cta">
-    <div class="cta-bg"></div>
-    <div class="cta-glow"></div>
-    <div class="container">
-      <div class="cta-content scroll-reveal">
-        <span class="section-label">Ready to Shine?</span>
-        <h2>Let's Build Your<br><span class="gradient-text">Brand Today</span></h2>
-        <p>Get a free quote within 24 hours. No obligations, just creative possibilities.</p>
-        <div class="cta-btns">
-          <a href="tel:+919999999999" class="btn btn-primary">Call for Free Quote</a>
-          <a href="https://wa.me/919999999999" target="_blank" class="btn btn-ghost">WhatsApp Us</a>
-        </div>
-      </div>
-    </div>
-    <div class="cta-shapes">
-      <div class="shape s1"></div>
-      <div class="shape s2"></div>
-      <div class="shape s3"></div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label scroll-reveal">Get In Touch</span>
-        <h2 class="section-title scroll-reveal">Start Your<br><em>Project Now</em></h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info scroll-reveal">
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
-            <div>
-              <label>Phone</label>
-              <a href="tel:+919999999999">+91 99999 99999</a>
+  <section id="contact" class="contact section relative">
+    <div class="container contact-wrap">
+      <div class="contact-info reveal">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Let's Bring Your Vision to <span class="text-gradient">Life</span></h2>
+        <p>Ready to upgrade your brand's visibility? Contact us today for a free consultation and personalized quote.</p>
+        
+        <div class="contact-cards">
+          <a href="tel:+919999999999" class="c-card glass-card">
+            <div class="c-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="c-details">
+              <span>Call Us Directly</span>
+              <strong>+91 99999 99999</strong>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">💬</div>
-            <div>
-              <label>WhatsApp</label>
-              <a href="https://wa.me/919999999999" target="_blank">Chat with us</a>
+          </a>
+          <a href="https://wa.me/919999999999" target="_blank" class="c-card glass-card whatsapp-card">
+            <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="c-details">
+              <span>WhatsApp Message</span>
+              <strong>Chat Instantly</strong>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">✉️</div>
-            <div>
-              <label>Email</label>
-              <a href="mailto:info@nilkanthsignage.com">info@nilkanthsignage.com</a>
+          </a>
+          <div class="c-card glass-card">
+            <div class="c-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="c-details">
+              <span>Visit Workshop</span>
+              <strong>12, Ranchhodpura Rd, Ahmedabad</strong>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div>
-              <label>Address</label>
-              <span>Nilkanth Signage Hub,<br>Industrial Area, Gujarat, India</span>
-            </div>
-          </div>
-          <div class="map-embed">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9!2d72.5713621!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzQnMTcuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
-              width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" title="Nilkanth Signage Location">
-            </iframe>
           </div>
         </div>
-        <div class="contact-form-wrap scroll-reveal">
-          <form class="contact-form" id="contactForm">
+      </div>
+      
+      <div class="contact-form reveal">
+        <div class="glass-card form-container">
+          <h3>Request a Quote</h3>
+          <form id="contactForm">
             <div class="form-group">
-              <input type="text" id="fname" required placeholder=" " />
-              <label for="fname">Your Name</label>
-              <div class="form-line"></div>
+              <input type="text" placeholder="Your Name" required />
             </div>
             <div class="form-group">
-              <input type="tel" id="fphone" required placeholder=" " />
-              <label for="fphone">Phone Number</label>
-              <div class="form-line"></div>
+              <input type="tel" placeholder="Phone Number" required />
             </div>
             <div class="form-group">
-              <input type="email" id="femail" placeholder=" " />
-              <label for="femail">Email (optional)</label>
-              <div class="form-line"></div>
-            </div>
-            <div class="form-group">
-              <select id="fservice" required>
-                <option value="" disabled selected></option>
-                <option>Radium Stickers</option>
-                <option>Sign Boards</option>
-                <option>Acrylic & Steel Letters</option>
-                <option>LED Signage</option>
-                <option>CNC & Laser Cutting</option>
-                <option>ACP Boards</option>
-                <option>LED Screens</option>
-                <option>Custom Branding</option>
+              <select required>
+                <option value="" disabled selected>Select Service Required</option>
+                <option>LED Sign Board</option>
+                <option>Acrylic Letters</option>
+                <option>Vehicle Wrap</option>
+                <option>Other</option>
               </select>
-              <label for="fservice">Service Required</label>
-              <div class="form-line"></div>
             </div>
             <div class="form-group">
-              <textarea id="fmsg" rows="4" placeholder=" "></textarea>
-              <label for="fmsg">Your Message</label>
-              <div class="form-line"></div>
+              <textarea rows="4" placeholder="Project Details..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary form-btn">
-              <span>Send Message</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-            </button>
+            <button type="submit" class="btn btn-primary w-full"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
           </form>
         </div>
       </div>
@@ -441,43 +251,43 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#" class="nav-logo">
-            <span class="logo-icon">◈</span>
-            <span>NILKANTH</span>
-          </a>
-          <p>Premium signage solutions crafted with precision and passion. Building brands that shine brighter.</p>
-        </div>
-        <div class="footer-links">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="#services">Radium Stickers</a></li>
-            <li><a href="#services">LED Signage</a></li>
-            <li><a href="#services">Acrylic Letters</a></li>
-            <li><a href="#services">CNC Cutting</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="#stats">About Us</a></li>
-            <li><a href="#gallery">Portfolio</a></li>
-            <li><a href="#why">Why Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact-col">
-          <h5>Contact</h5>
-          <p><a href="tel:+919999999999">+91 99999 99999</a></p>
-          <p><a href="mailto:info@nilkanthsignage.com">info@nilkanthsignage.com</a></p>
-          <p>Gujarat, India</p>
+    <div class="container footer-content">
+      <div class="f-brand">
+        <a href="#home" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="logo-text">
+            <span class="logo-main">NILKANTH</span>
+          </div>
+        </a>
+        <p>Your premier destination for high-quality, durable, and visually stunning signage solutions in India since 2005.</p>
+        <div class="f-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2025 Nilkanth Radium Sticker & Signage. All rights reserved.</p>
-        <p>Crafted with <span style="color:var(--neon)">♥</span> in India</p>
+      <div class="f-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="f-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">LED Signs</a></li>
+          <li><a href="#">Vehicle Wraps</a></li>
+          <li><a href="#">Acrylic Letters</a></li>
+          <li><a href="#">CNC Cutting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Nilkanth Radium Sticker & Signage. All rights reserved.</p>
       </div>
     </div>
   </footer>
